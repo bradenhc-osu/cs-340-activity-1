@@ -5,7 +5,7 @@
     <ul>
         {{#each menuitems }}
             <li>
-                <a href='{{this.location}}' {{#ifeq pageName this.page}}class="active"{{/ifeq}}>{{this.page}}</a>
+                <a href='{{this.location}}' {{#ifeq ../pageName this.page}}class="active"{{/ifeq}}>{{this.page}}</a>
             </li>
         {{/each}}
     </ul>
