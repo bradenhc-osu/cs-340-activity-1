@@ -9,7 +9,9 @@ module.exports = {
                 username: config.onid,
                 menuitems: [
                     { location: '/suppliers', page: 'List Suppliers' },
-                    { location: '/parts', page: 'List Parts' }
+                    { location: '/suppliers/add', page: 'Add Supplier' },
+                    { location: '/parts', page: 'List Parts' },
+                    { location: '/parts/add', page: 'Add Part' }
                 ]
             },
             obj

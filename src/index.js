@@ -1,8 +1,9 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
+const bodyParser = require('body-parser');
 const mysql = require('mysql2/promise');
 const { handleAsyncronously, createViewContext } = require('./utils');
-const pageRouter = require('./routes/pages');
+const router = require('./routes');
 
 const config = require('./config');
 
@@ -45,9 +46,8 @@ app.use(
 );
 
 // Add our rendering routes
-app.use(pageRouter);
-
-// Add our API routes
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(router);
 
 // Add a handler to render a 404 view
 app.use('*', (req, res) => {
