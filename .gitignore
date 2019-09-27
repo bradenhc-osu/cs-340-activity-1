@@ -1,3 +1,9 @@
+# App configuration
+src/config.js
+
+# IDE Settings
+.vscode/
+
 # Logs
 logs
 *.log
