@@ -52,11 +52,13 @@ router.get(
     '/parts',
     handleAsyncronously(async (req, res) => {
         // TODO: Add query to select all the parts
+        let rows = [];
 
         res.render(
             'parts',
             createViewContext({
-                pageName: 'List Parts'
+                pageName: 'List Parts',
+                rows
             })
         );
     })

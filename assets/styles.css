@@ -24,6 +24,10 @@ header em {
 	font-size: 0.75em
 }
 
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
 
 html {
 	background-color: light gray;
@@ -68,8 +72,6 @@ main {
 	margin: auto;
 	margin: 10px 10px 10px 10px;
 	background-color: white;
-	border: solid grey 2px;
-	border-radius: 8px;
 	padding: 10px 10px 10px 10px;
 }
 #betSpan {
