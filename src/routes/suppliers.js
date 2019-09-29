@@ -3,6 +3,9 @@ const { handleAsyncronously, createViewContext } = require('../utils');
 
 const router = express.Router();
 
+/**
+ * Route for listing part suppliers.
+ */
 router.get(
     '/suppliers',
     handleAsyncronously(async (req, res) => {
@@ -18,6 +21,9 @@ router.get(
     })
 );
 
+/**
+ * Route for displaying the form used to add a new part supplier.
+ */
 router.get(
     '/suppliers/add',
     handleAsyncronously(async (req, res) => {
@@ -25,6 +31,9 @@ router.get(
     })
 );
 
+/**
+ * Logic for actually adding a new part supplier using data from a form submission.
+ */
 router.post(
     '/suppliers/add',
     handleAsyncronously(async (req, res) => {
