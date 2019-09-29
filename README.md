@@ -9,7 +9,7 @@ You will be creating a small Parts-Supplier database in phpMyAdmin for the ER di
 ![Assignment Design Overview](https://user-images.githubusercontent.com/39965401/65824301-78314500-e21b-11e9-9a7e-342b32325f6d.png)
 
 ## Steps
-1. Clone this repository or download the contents as a ZIP file and place the contents in you `public_html/cs340` directory on the ENGR Flip servers.
+1. Clone this repository or download the contents as a ZIP file and place the contents in your `public_html/cs340` directory on the ENGR Flip servers.
 1. Copy the contents of `src/config.template.js` into a new file called `src/config.js` and update the configuration.
 1. Log in to [phpMyAdmin] and import the `scripts/seed-db.sql` file to create the tables required for this assignment.
 1. In [phpMyAdmin]
@@ -45,3 +45,5 @@ You will be creating a small Parts-Supplier database in phpMyAdmin for the ER di
 
 ## Submit
 Submit a screenshot of your database relationship and your URLs to Canvas.
+
+[phpMyAdmin]: https://tools.engr.oregonstate.edu/phpMyAdmin/index.php
