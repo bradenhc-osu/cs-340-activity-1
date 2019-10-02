@@ -1,3 +1,6 @@
+# Changes to App Configuration
+src/config.js
+
 # IDE Settings
 .vscode/
 
