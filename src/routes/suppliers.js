@@ -42,7 +42,7 @@ router.post('/suppliers/add', (req, res, next) => {
             res.render('suppliers-add', context);
         } else {
             // Doesn't exist, create it
-            req.db.execute(
+            req.db.query(
                 'INSERT INTO Suppliers (sid, sname, city) VALUES (?,?,?)',
                 [req.body.sid, req.body.sname, req.body.city],
                 err => {
