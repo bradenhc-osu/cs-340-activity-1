@@ -4,14 +4,14 @@
 **Work individually and submit URLs in Canvas.**
 
 ## Overview
-You will be creating a small Parts-Supplier database in phpMyAdmin for the ER diagram given below.  You will also modify code to create a website that accesses the database using JavaScript (Node.js), HTML & CSS.
+You will be creating a small Parts-Supplier database in phpMyAdmin for the ER diagram given below.  You will also modify code to create a website that accesses the database using Node.js (JavaScript), HTML & CSS.
 
 ![Assignment Design Overview](https://user-images.githubusercontent.com/39965401/65824301-78314500-e21b-11e9-9a7e-342b32325f6d.png)
 
 ## Steps
-1. Clone this repository or download the contents as a ZIP file and place the contents in your `public_html/cs340` directory on the ENGR Flip servers.
-1. Copy the contents of `src/config.template.js` into a new file called `src/config.js` and update the configuration.
-1. Log in to [phpMyAdmin] and import the `scripts/seed-db.sql` file to create the tables required for this assignment.
+1. Clone this repository or download the contents as a ZIP file and place the contents somewhere in your user directory on the ENGR Flip servers.
+1. Update the configuration in `config.js`.
+1. Log in to [phpMyAdmin] and import the `scripts/seed-db.sql` file to create the tables required for this assignment. To do this you may need to download the files locally as well or just copy/paste the SQL from the file into the SQL editor in phpMyAdmin.
 1. In [phpMyAdmin]
    - Create a new table named `Suppliers` with the structure and values shown below:
 
@@ -26,15 +26,19 @@ You will be creating a small Parts-Supplier database in phpMyAdmin for the ER di
 
      ![Designer Window Example](https://user-images.githubusercontent.com/39965401/65824318-dbbb7280-e21b-11e9-88ad-62e7bd6d5b81.png)
 
-   - After linking the tables, insert two new records into the `Catalog` table.
+   - **After linking the tables**, insert two new records into the `Catalog` table.
 
 1. From the root of this repository (where you downloaded the files):
-   - Install the required dependencies - `npm install`
-   - Start the server - `npm start`
-   - If you are using the ENGR servers, you may need to modify the `PORT` environment variable for the server to start properly. To do so, simply run   the following commands from the terminal on the Flip server, replacing `<port_number>` with the port you wish to use (a number between 2000 and   65535):
-   
-         $ bash
-         $ PORT=<port_number> npm start
+   - Install the required dependencies and start the server
+
+         $ npm install
+         $ npm start
+
+      > If you are using the ENGR servers, you may need to modify the `PORT` environment variable for the server to start properly. To do so, simply run   the following commands from the terminal on the Flip server, replacing `<port_number>` with the port you wish to use (a number between 2000 and   65535). You also will want to enter a `bash` shell before running your commands. Do the following:
+      >
+      >     $ bash
+      >     $ npm install
+      >     $ PORT=<port_number> npm start
 
 1. Visit the server address from your browser. Replace `PORT` in the URLs below with the port number you used (default of 3000):
    - If you are running this locally (on your own PC, not the Flip server), use `http://localhost:PORT/suppliers`
