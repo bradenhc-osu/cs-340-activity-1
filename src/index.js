@@ -5,6 +5,7 @@ const mysql = require('mysql');
 const { createViewContext } = require('./utils');
 const suppliersRouter = require('./routes/suppliers');
 const partsRouter = require('./routes/parts');
+const catalogRouter = require('./routes/catalog');
 
 const config = require('./config');
 
@@ -52,6 +53,7 @@ app.use((req, res, next) => {
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(suppliersRouter);
 app.use(partsRouter);
+app.use(catalogRouter);
 
 // Add a handler to render a 404 view
 app.use('*', (req, res) => {
