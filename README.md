@@ -26,7 +26,7 @@ You will be creating a small Parts-Supplier database in phpMyAdmin for the ER di
 
      ![Designer Window Example](https://user-images.githubusercontent.com/39965401/65824318-dbbb7280-e21b-11e9-88ad-62e7bd6d5b81.png)
 
-   - Insert two new records into the `Catalog` table.
+   - After linking the tables, insert two new records into the `Catalog` table.
 
 1. From the root of this repository (where you downloaded the files):
    - Install the required dependencies - `npm install`
@@ -40,7 +40,7 @@ You will be creating a small Parts-Supplier database in phpMyAdmin for the ER di
    - If you are running this locally (on your own PC, not the Flip server), use `http://localhost:PORT/suppliers`
    - If you are running this on the Flip server, use `http://flipX.engr.oregonstate.edu:PORT/suppliers`. Replace `X` with the number of the Flip server you logged in to (1, 2, or 3).
 
-1. Change the "My Site" text to your name.
+1. **Change the "My Site" text to your full name.**
 1. Modify the code in the `src/routes/pages.js` file according to the `TODO` statements in the code.
 
 ## Submit

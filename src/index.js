@@ -1,8 +1,8 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
 const bodyParser = require('body-parser');
-const mysql = require('mysql2/promise');
-const { handleAsyncronously, createViewContext } = require('./utils');
+const mysql = require('mysql');
+const { createViewContext } = require('./utils');
 const suppliersRouter = require('./routes/suppliers');
 const partsRouter = require('./routes/parts');
 
@@ -34,17 +34,19 @@ app.set('view engine', 'hbs');
 
 // Connect to the database on each request. The database connection will be available as `req.db`.
 // The connection will automatically close when the object is destroyed.
-app.use(
-    handleAsyncronously(async (req, res, next) => {
-        req.db = await mysql.createConnection({
-            host: config.host,
-            user: config.user,
-            password: config.password,
-            database: config.dbname
-        });
+app.use((req, res, next) => {
+    let conn = mysql.createConnection({
+        host: config.host,
+        user: config.user,
+        password: config.password,
+        database: config.dbname
+    });
+    conn.connect((err) => {
+        if (err) return next(err);
+        req.db = conn;
         next();
-    })
-);
+    });
+});
 
 // Add our routes
 app.use(bodyParser.urlencoded({ extended: true }));
