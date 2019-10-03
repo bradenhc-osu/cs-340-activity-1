@@ -45,7 +45,7 @@ You will be creating a small Parts-Supplier database in phpMyAdmin for the ER di
    - If you are running this on the Flip server, use `http://flipX.engr.oregonstate.edu:PORT/suppliers`. Replace `X` with the number of the Flip server you logged in to (1, 2, or 3).
 
 1. **Change the "My Site" text to your full name** (many students forget this). You can find the source in the `views/partials/header.hbs` file.
-1. Modify the code in the `src/routes/pages.js` file according to the `TODO` statements in the code.
+1. Modify the code in the `src/routes/parts.js` file according to the `TODO` statements in the code.
 
 ## Submit
 Submit a screenshot of your database relationship and your URLs to Canvas.
