@@ -29,16 +29,19 @@ You will be creating a small Parts-Supplier database in phpMyAdmin for the ER di
    - **After linking the tables**, insert two new records into the `Catalog` table.
 
 1. From the root of this repository (where you downloaded the files):
-   - Install the required dependencies and start the server
+   - On the ENGR server, install the required dependencies and start the server using `forever`. Follow the commands below, replacing `<port_number>` with an unused port on the Flip server you are using.
 
+         $ bash
          $ npm install
-         $ npm start
+         $ npm install -g forever
+         $ PORT=<port_number> forever start src/index.js
 
-      > If you are using the ENGR servers, you may need to modify the `PORT` environment variable for the server to start properly. To do so, simply run   the following commands from the terminal on the Flip server, replacing `<port_number>` with the port you wish to use (a number between 2000 and   65535). You also will want to enter a `bash` shell before running your commands. Do the following:
+      > If your forever process fails to start, it is probably because the PORT you are trying to use is already in use. Try using a different port to fix the issue.
+
+      > If you are not using the ENGR servers to complete the assignment, you may not need to modify the `PORT` environment variable for the server to start properly. In this case, simply run the following:
       >
-      >     $ bash
       >     $ npm install
-      >     $ PORT=<port_number> npm start
+      >     $ npm start
 
 1. Visit the server address from your browser. Replace `PORT` in the URLs below with the port number you used (default of 3000):
    - If you are running this locally (on your own PC, not the Flip server), use `http://localhost:PORT/suppliers`
