@@ -84,7 +84,7 @@ You will be creating a small Parts-Supplier database in phpMyAdmin for the ER di
         >
         > Stop a process by it's index
         >
-        >     $ node_modules/.bin/forever stop
+        >     $ node_modules/.bin/forever stop <index>
         >
         > Stop all processes (useful if there are several stopped processes that need to be cleaned up)
         >
