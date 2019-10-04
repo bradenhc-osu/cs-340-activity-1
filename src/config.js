@@ -9,8 +9,8 @@
  */
 module.exports = {
     host: 'classmysql.engr.oregonstate.edu',
-    user: 'cs340_username',
-    password: 'XXXXX',
-    dbname: 'cs340_username',
-    onid: 'username'
+    user: 'cs340_hitchcob',
+    password: '7363',
+    dbname: 'cs340_hitchcob',
+    onid: 'hitchcob'
 };

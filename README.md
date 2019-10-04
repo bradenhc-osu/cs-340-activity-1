@@ -2,7 +2,7 @@
 
 > Oregon State University - CS 340 - Introduction to Databases
 
-**Work individually and submit URLs in Canvas.**
+**Work individually and submit a screenshot of your database relationship (the designer view) and your website server URL to Canvas**
 
 ## Overview
 
