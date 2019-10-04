@@ -20,7 +20,7 @@ You will be creating a small Parts-Supplier database in phpMyAdmin for the ER di
     
     > **NOTE**: You need to have Duo Security setup to SSH into ENGR servers.
 
-1.  Clone this repository or download the contents as a ZIP file and place the contents somewhere in your user directory on the ENGR Flip servers.
+1.  Clone this repository or and place the contents somewhere in your user directory on the ENGR Flip servers.
 
         $ git clone https://github.com/bradenhc-osu/cs-340-activity-1.git
 
