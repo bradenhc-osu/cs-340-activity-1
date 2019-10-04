@@ -20,13 +20,13 @@ You will be creating a small Parts-Supplier database in phpMyAdmin for the ER di
     
     > **NOTE**: You need to have Duo Security setup to SSH into ENGR servers.
 
-1.  Clone this repository or and place the contents somewhere in your user directory on the ENGR Flip servers.
+1.  Clone this repository and place the contents somewhere in your user directory on the ENGR Flip servers.
 
         $ git clone https://github.com/bradenhc-osu/cs-340-activity-1.git
 
-1. Navigate into the created directory (`cs-340-activity-1`)
+1. Navigate into the created directory (`cs-340-activity-1`).
 
-1.  Log in to [phpMyAdmin] from a browser and import the `scripts/seed-db.sql` file to create the tables required for this assignment. To do this you may need to download the files locally as well or just copy/paste the SQL from the file into the SQL editor in phpMyAdmin.
+1.  Log into [phpMyAdmin] from a browser and import the `scripts/seed-db.sql` file to create the tables required for this assignment. To do this you may need to download the files locally as well or just copy/paste the SQL from the file into the SQL editor in phpMyAdmin.
 
 1.  In [phpMyAdmin]
 
@@ -39,11 +39,11 @@ You will be creating a small Parts-Supplier database in phpMyAdmin for the ER di
 
         ![Catalog Constraints](https://user-images.githubusercontent.com/39965401/65824320-e970f800-e21b-11e9-97da-4bd53a66ee28.png)
 
-    - Go to the designer window to verify the relationship (you will need to submit a screenshot to Canvas). It should resemble the following:
+    - Go to the designer window (click on the database in the left panel, then select "Designer" from the top menu. You have to click the "More" option to see it) to verify the relationship. **You will need to submit a screenshot to Canvas of this**. It should resemble the following:
 
         ![Designer Window Example](https://user-images.githubusercontent.com/39965401/65824318-dbbb7280-e21b-11e9-88ad-62e7bd6d5b81.png)
 
-    - **After linking the tables**, insert two new records into the `Catalog` table.
+    - **After linking the tables** (don't do this before!), insert two new records into the `Catalog` table.
 
 1.  On the ENGR Flip server (where you downloaded/cloned the files):
 
