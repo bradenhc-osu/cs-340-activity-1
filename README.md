@@ -78,15 +78,15 @@ You will be creating a small Parts-Supplier database in phpMyAdmin for the ER di
 
         > **Some helpful commands for working with forever**
         >
-        > Restart a process by it's index (the `<number>` from between the [] in the output of the list command)
+        > Restart a process by it's index (replace `<index>` with the number between the [] in the output of the list command):
         >
-        >     $ node_modules/.bin/forever restart <number>
+        >     $ node_modules/.bin/forever restart <index>
         >
-        > Stop a process by it's index
+        > Stop a process by it's index:
         >
         >     $ node_modules/.bin/forever stop <index>
         >
-        > Stop all processes (useful if there are several stopped processes that need to be cleaned up)
+        > Stop all processes (useful if there are several stopped processes that need to be cleaned up):
         >
         >     $ node_modules/.bin/forever stopall
         >
