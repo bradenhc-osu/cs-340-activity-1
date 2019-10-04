@@ -76,7 +76,7 @@ You will be creating a small Parts-Supplier database in phpMyAdmin for the ER di
 
           $ node_modules/.bin/forever list
 
-        > If your forever process fails to start, it is probably because the PORT you are trying to use is already in use. Try using a different port to fix the issue. Some helpful commands for working with forever include the following:
+        > **Some helpful commands for working with forever**
         >
         > Restart a process by it's index (the `<number>` from between the [] in the output of the list command)
         >
